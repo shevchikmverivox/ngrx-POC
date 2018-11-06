@@ -1,0 +1,8 @@
+<input placeholder="your name" [(ngModel)]="author"/>
+<chat-window [messages]="this.messages" ></chat-window>
+<div class="input-area">
+  <input class="message-input" [(ngModel)]="currentMessage" />
+  <button class="send-button" (click)="sendMessage()">Send</button>
+</div>
+
+<button class="clear-messages" (click)="clearMessages()">Clear</button>
